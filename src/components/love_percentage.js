@@ -82,7 +82,8 @@ export default LovePercentage;
 
 const styles = StyleSheet.create({
   form: {
-    marginTop: 300,
+    marginTop: 30,
+    paddingTop: 100,
   },
   button: {
     backgroundColor: '#FFA3A3',
