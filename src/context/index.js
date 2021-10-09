@@ -6,16 +6,21 @@ class MyProvider extends Component {
     screen: 1,
     fname: 'Khin',
     sname: 'Kaung',
-    percentage: '',
+    percentage: 0,
     result: '',
   };
 
+  backToHome = () => {
+    this.setState({
+      screen: 1,
+    });
+  };
   addName = (name1, name2) => {
     this.setState(() => ({
       screen: 2,
       fname: name1,
       sname: name2,
-      percentage: '',
+      percentage: 0,
       result: '',
     }));
     this.getPercentage();
@@ -45,6 +50,7 @@ class MyProvider extends Component {
           state: this.state,
           getPercentage: this.getPercentage,
           addName: this.addName,
+          backToHome: this.backToHome,
         }}>
         {this.props.children}
       </MyContext.Provider>
