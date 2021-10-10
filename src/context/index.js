@@ -4,9 +4,9 @@ import MyContext from './context';
 class MyProvider extends Component {
   state = {
     screen: 1,
-    fname: 'Khin',
-    sname: 'Kaung',
-    percentage: 0,
+    fname: '',
+    sname: '',
+    percentage: '',
     result: '',
   };
 
@@ -20,7 +20,7 @@ class MyProvider extends Component {
       screen: 2,
       fname: name1,
       sname: name2,
-      percentage: 0,
+      percentage: '',
       result: '',
     }));
     this.getPercentage();

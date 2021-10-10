@@ -5,10 +5,11 @@ import MyContext from '../context/context';
 
 const PercentageCircle = () => {
   const context = useContext(MyContext);
+  let percentage = Number(context.state.percentage);
   return (
     <View style={{alignItems: 'center', marginTop: 100}}>
       <ProgressCircle
-        percent={context.state.percentage}
+        percent={percentage}
         radius={100}
         borderWidth={10}
         color="#FFA3A3"
