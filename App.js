@@ -10,6 +10,7 @@ import {
 import LovePercentage from './src/components/love_percentage';
 import ResultScreen from './src/components/result_screen';
 import MyContext from './src/context/context';
+import Authenticate from './src/authenticate';
 
 const App = () => {
   const context = useContext(MyContext); //access to the context
