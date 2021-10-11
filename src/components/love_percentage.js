@@ -35,6 +35,8 @@ const LovePercentage = () => {
           <>
             <Input
               placeholder="Enter first name"
+              // eslint-disable-next-line prettier/prettier
+              leftIcon={{type: 'materialIcons', name: 'favorite',color: '#FFA3A3'}}
               inputContainerStyle={{
                 marginHorizontal: 50,
               }}
@@ -52,6 +54,11 @@ const LovePercentage = () => {
             />
             <Input
               placeholder="Enter second name"
+              leftIcon={{
+                type: 'materialIcons',
+                name: 'favorite',
+                color: '#FFA3A3',
+              }}
               inputContainerStyle={{
                 marginHorizontal: 50,
               }}
