@@ -7,7 +7,8 @@ const MainLogo = () => {
     <View style={{marginLeft: 90, marginBottom: 100}}>
       <Text
         style={{
-          color: '#FFA3A3',
+          fontFamily: 'Pacifico-Regular',
+          color: '#EA5B5B',
           fontWeight: '600',
           fontSize: 30,
         }}>

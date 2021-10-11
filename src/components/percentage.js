@@ -17,7 +17,7 @@ const PercentageCircle = () => {
         bgColor="#FFE5E5">
         <Text style={{fontSize: 30}}>{context.state.percentage}%</Text>
       </ProgressCircle>
-      <Text style={{fontSize: 18}}>{context.state.result}</Text>
+      <Text style={{fontSize: 18, fontFamily:'Pacifico-Regular', margin: 40}}>{context.state.result}</Text>
     </View>
   );
 };

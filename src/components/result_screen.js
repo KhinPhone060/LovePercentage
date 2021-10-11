@@ -16,7 +16,11 @@ const ResultScreen = () => {
   return (
     <View style={styles.container}>
       {context.state.result === '' ? (
-        <ActivityIndicator size="large" color="#F77B7B" />
+        <ActivityIndicator
+          size="large"
+          color="#F77B7B"
+          style={{marginBottom: 200}}
+        />
       ) : (
         <View styles={styles.form}>
           <PercentageCircle />
