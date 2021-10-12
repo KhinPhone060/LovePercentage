@@ -1,10 +1,10 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 
 const MainLogo = () => {
   return (
-    <View style={{marginLeft: 90, marginBottom: 100}}>
+    <View style={{marginStart: 90, marginBottom: 100}}>
       <Text
         style={{
           fontFamily: 'Pacifico-Regular',

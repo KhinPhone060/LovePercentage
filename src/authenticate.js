@@ -1,7 +1,9 @@
+/* eslint-disable no-alert */
 import React, {useState} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import {Formik} from 'formik';
 import {Input, Button, CheckBox} from 'react-native-elements';
+import MainLogo from './assets/utils/main_logo';
 
 const Authenticate = () => {
   const [register, setRegister] = useState(false);
@@ -21,7 +23,8 @@ const Authenticate = () => {
         initialValues={{email: '', password: ''}}
         onSubmit={values => handleSubmit(values)}>
         {({handleChange, handleBlur, values, handleSubmit}) => (
-          <View style={{padding: '10%'}}>
+          <View style={{padding: '10%', marginTop: 100}}>
+            <MainLogo />
             <Input
               placeholder="Email"
               leftIcon={{type: 'MaterialIcons', name: 'email'}}
@@ -36,7 +39,17 @@ const Authenticate = () => {
               onBlur={handleBlur('password')}
               value={values.password}
             />
-            <Button title="Submit" onPress={handleSubmit} />
+            <Button
+              title="Submit"
+              buttonStyle={{
+                backgroundColor: '#FFA3A3',
+                width: '60%',
+                marginStart: 50,
+                borderRadius: 50,
+                padding: 15,
+              }}
+              onPress={handleSubmit}
+            />
             <CheckBox
               title={register ? 'Register' : 'Login'}
               checked={register}

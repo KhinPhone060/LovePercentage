@@ -7,7 +7,7 @@ const PercentageCircle = () => {
   const context = useContext(MyContext);
   let percentage = Number(context.state.percentage);
   return (
-    <View style={{alignItems: 'center', marginTop: 100}}>
+    <View style={{alignItems: 'center'}}>
       <ProgressCircle
         percent={percentage}
         radius={100}
@@ -17,7 +17,9 @@ const PercentageCircle = () => {
         bgColor="#FFE5E5">
         <Text style={{fontSize: 30}}>{context.state.percentage}%</Text>
       </ProgressCircle>
-      <Text style={{fontSize: 18, fontFamily:'Pacifico-Regular', margin: 40}}>{context.state.result}</Text>
+      <Text style={{fontSize: 18, fontFamily: 'Pacifico-Regular', margin: 40}}>
+        {context.state.result}
+      </Text>
     </View>
   );
 };

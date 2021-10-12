@@ -10,6 +10,7 @@ import {
 import {Button} from 'react-native-elements';
 import MyContext from '../context/context';
 import PercentageCircle from './percentage';
+import ShareTo from './share_to';
 
 const ResultScreen = () => {
   const context = useContext(MyContext);
@@ -24,6 +25,7 @@ const ResultScreen = () => {
       ) : (
         <View styles={styles.form}>
           <PercentageCircle />
+          <ShareTo />
           <Button
             title="Back to Home"
             buttonStyle={styles.button}
